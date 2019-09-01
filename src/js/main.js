@@ -1,7 +1,7 @@
 var example = document.getElementById("cl"),
     context = example.getContext('2d');
 
-var widthX = 1300;
+var widthX = 2000;
 var heigthY = 1500;
 var wS = widthX / (widthX / 200 / (widthX / heigthY));
 var hS = heigthY / (heigthY / 200);
