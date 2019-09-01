@@ -1,0 +1,78 @@
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="css/main.css")
+    title Hello world
+  body
+    
+
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      .container
+        a.navbar-brand(href="#") Navbar
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarNavDropdown
+          ul.navbar-nav
+            li.nav-item.active
+              a.nav-link(href="#") Home 
+                span.sr-only current
+            li.nav-item
+              a.nav-link(href="#") Features
+            li.nav-item
+              a.nav-link(href="#") Pricing
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown link
+              .dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
+                a.dropdown-item(href="#") Action
+                a.dropdown-item(href="#") Another action
+                a.dropdown-item(href="#") Something else here      
+
+
+
+
+    section.mt-2.mb-2
+      .container
+        .d-flex.bd-highlight.border
+          .p-2.flex-fill.bd-highlight 
+            canvas#cl(width = 400 Height = 200 ) Обновите браузер
+            script(src = 'js/main.js')
+          .p-2.flex-fill.bd-highlight.border-right.border-left
+            form
+              .form-group
+                label(for="fWidth") Ширина
+                input.form-control#fWidth(type="text" aria-describedby="emailHelp" placeholder="Ширина" value = "1300")
+              .form-group
+                label(for="fHeight") Высота
+                input.form-control#fHeight(type="text" placeholder="Высота" value = "1400")
+              button.btn.btn-primary(type="submit") Отправить
+          .p-2.flex-fill.bd-highlight
+            h3 #[span Тут ] и вот
+
+
+
+    footer
+      .d-flex.p-2.bd-highlight.border
+        .container Подвал
+
+
+      
+
+
+    script(src="js/libs.min.js")
+    script(src="js/main.js")
+    script(src="../node_modules/bootstrap/dist/js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous")
+
+    //- script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    //- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    //- crossorigin="anonymous")
+
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous")
