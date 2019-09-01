@@ -1,5 +1,5 @@
 var example = document.getElementById("cl"),
-    context = example.getContext('2d');
+	context = example.getContext('2d');
 
 var widthX = 2000;
 var heigthY = 1500;
