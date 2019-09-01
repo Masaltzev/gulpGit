@@ -45,7 +45,9 @@
             </form>
           </div>
           <div class="p-2 flex-fill bd-highlight">
-            <h3><span>Тут </span> и вот</h3>
+            <div id="app">
+              <h1>Hello VUE</h1>
+            </div>
           </div>
         </div>
       </div>
