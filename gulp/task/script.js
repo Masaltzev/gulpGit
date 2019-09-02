@@ -10,7 +10,7 @@ module.exports = function () {
             }));
     });
     $.gulp.task('scripts', function () {
-        return $.gulp.src('src/js/**/*.js')
+        return $.gulp.src('src/js/*.js')
             .pipe($.gulp.dest('build/js'))
             .pipe($.bs.reload({
                 stream: true
