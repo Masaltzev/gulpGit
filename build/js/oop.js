@@ -6,5 +6,7 @@ class rama {
 }
 
 let task = new rama('807');
+let task2 = new rama('806');
 
 console.log(task.title);
+console.log(task2.title);
