@@ -48,6 +48,8 @@
             <div id="app">
               <h3>Hello {{ name }}</h3>
             </div>
+            <button onclick="dt('date')">нажми</button>
+            <div id="date"></div>
           </div>
         </div>
       </div>
@@ -64,6 +66,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/oop.js"></script>
     <script src="js/vue.js"></script>
+    <script src="js/lessons.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
