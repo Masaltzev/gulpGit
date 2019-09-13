@@ -44,11 +44,11 @@ html(lang="ru-RU")
 						form
 							.form-group
 								label(for="fWidth") Ширина
-								input.form-control#fWidth(type="text" aria-describedby="emailHelp" placeholder="Ширина" value = "1300")
+								input.form-control#fWidth(type="text" aria-describedby="emailHelp" placeholder="Ширина")
 							.form-group
 								label(for="fHeight") Высота
-								input.form-control#fHeight(type="text" placeholder="Высота" value = "1400")
-							button.btn.btn-primary(type="submit") Отправить
+								input.form-control#fHeight(type="text" placeholder="Высота")
+							button.btn.btn-primary(type="submit" onclick="paint()") Отправить
 							|
 							|<?php $fwidth=($_POST['fwidth']);?>
 
@@ -56,14 +56,15 @@ html(lang="ru-RU")
 						//- h3 #[span Тут ] и вот
 						#app
 							h3 Hello {{ name }}
-						button(onclick="dt('date')") нажми
+						//-button(onclick="dt('fWidth','fHeight')") нажми
 						#date
 
 
 
 		footer
-			.d-flex.p-2.bd-highlight.border
-				.container Подвал
+			.jumbotron.text-center(style="margin-bottom:0")
+				.d-flex.p-2.bd-highlight.border
+					.container Подвал
 
 
 

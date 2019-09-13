@@ -34,13 +34,13 @@
             <form>
               <div class="form-group">
                 <label for="fWidth">Ширина</label>
-                <input class="form-control" id="fWidth" type="text" aria-describedby="emailHelp" placeholder="Ширина" value="1300">
+                <input class="form-control" id="fWidth" type="text" aria-describedby="emailHelp" placeholder="Ширина">
               </div>
               <div class="form-group">
                 <label for="fHeight">Высота</label>
-                <input class="form-control" id="fHeight" type="text" placeholder="Высота" value="1400">
+                <input class="form-control" id="fHeight" type="text" placeholder="Высота">
               </div>
-              <button class="btn btn-primary" type="submit">Отправить</button>
+              <button class="btn btn-primary" type="submit" onclick="paint()">Отправить</button>
               <?php $fwidth=($_POST['fwidth']);?>
             </form>
           </div>
@@ -48,15 +48,16 @@
             <div id="app">
               <h3>Hello {{ name }}</h3>
             </div>
-            <button onclick="dt('date')">нажми</button>
             <div id="date"></div>
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <div class="d-flex p-2 bd-highlight border">
-        <div class="container">Подвал</div>
+      <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="d-flex p-2 bd-highlight border">
+          <div class="container">Подвал</div>
+        </div>
       </div>
     </footer>
     <script src="js/libs.min.js"></script>

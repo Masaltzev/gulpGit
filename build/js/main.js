@@ -1,8 +1,16 @@
 var example = document.getElementById("cl"),
 	context = example.getContext('2d');
 
-var widthX = 2000;
-var heigthY = 1500;
+
+function paint() {
+	var widthX = document.getElementById('fWidth').value;
+	var heigthY = document.getElementById('fHeight').value;
+	return widthX, heigthY;
+}
+
+console.log(widthX);
+
+
 var wS = widthX / (widthX / 200 / (widthX / heigthY));
 var hS = heigthY / (heigthY / 200);
 var w = 10;
