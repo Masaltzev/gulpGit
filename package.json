@@ -1,7 +1,6 @@
 {
   "name": "self",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +21,14 @@
     "node-sass": "^4.12.0",
     "slick-carousel": "^1.8.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Masaltzev/gulpGit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Masaltzev/gulpGit/issues"
+  },
+  "homepage": "https://github.com/Masaltzev/gulpGit#readme",
+  "description": ""
 }

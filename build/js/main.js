@@ -3,12 +3,13 @@ var example = document.getElementById("cl"),
 
 
 function paint() {
-	var widthX = document.getElementById('fWidth').value;
-	var heigthY = document.getElementById('fHeight').value;
+	let widthX = document.getElementById('fWidth').value;
+	let heigthY = document.getElementById('fHeight').value;
 	return widthX, heigthY;
 }
 
 console.log(widthX);
+console.log('Козлы');
 
 
 var wS = widthX / (widthX / 200 / (widthX / heigthY));

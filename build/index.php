@@ -49,6 +49,17 @@
               <h3>Hello {{ name }}</h3>
             </div>
             <div id="date"></div>
+            <form>
+              <div class="form-group">
+                <label for="selectOpt">Стиль</label>
+                <select class="form-control" id="selectOpt">
+                  <option value="False" name="one"></option>
+                  <option value="Rock" name="one">Рок</option>
+                  <option value="Jaz" name="one" selected>Джаз</option>
+                  <option value="Blues" name="one">Блюз</option>
+                </select>
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -58,6 +58,14 @@ html(lang="ru-RU")
 							h3 Hello {{ name }}
 						//-button(onclick="dt('fWidth','fHeight')") нажми
 						#date
+						form
+							.form-group
+								label(for = 'selectOpt') Стиль
+								select#selectOpt.form-control
+									option(value = 'False' name = 'one')
+									option(value = 'Rock' name = 'one') Рок
+									option(value = 'Jaz' name = 'one' selected) Джаз
+									option(value = 'Blues' name = 'one') Блюз
 
 
 
