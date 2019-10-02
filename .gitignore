@@ -3,3 +3,5 @@ node_modules
 SelfGulp.code-workspace
 create.bat
 src/sass/sass-snippets.json
+package-lock.json
+package.json
