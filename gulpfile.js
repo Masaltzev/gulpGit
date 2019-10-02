@@ -1,27 +1,28 @@
-'use strict';
+"use strict";
 
 global.$ = {
-    gulp: require('gulp'),
-    glp: require('gulp-load-plugins')(),
-    bs: require('browser-sync').create(),
-    sass_compiler: require('node-sass'),
+  gulp: require("gulp"),
+  glp: require("gulp-load-plugins")(),
+  bs: require("browser-sync").create(),
+  sass_compiler: require("node-sass"),
+  //connectPHP: require("gulp-connect-php"),
 
-
-    path: {
-        task: require('./gulp/config/task.js')
-    }
+  path: {
+    task: require("./gulp/config/task.js")
+  }
 };
 
-$.path.task.forEach(function (taskPath) {
-    require(taskPath)();
+$.path.task.forEach(function(taskPath) {
+  require(taskPath)();
 });
 
-$.gulp.task('default', $.gulp.series(
-    $.gulp.parallel('pug', 'sass', 'scripts:lib', 'scripts', 'php'),
-    $.gulp.parallel('watch', 'serve')
-));
-
-
+$.gulp.task(
+  "default",
+  $.gulp.series(
+    $.gulp.parallel("pug", "sass", "scripts:lib", "scripts", "php"),
+    $.gulp.parallel("watch", "serve"),
+  )
+);
 
 // var gulp = require('gulp'), // Подключаем Gulp
 //     sass = require('gulp-sass'), //Подключаем Sass пакет,
