@@ -4,3 +4,4 @@
 // }
 let elem = 'rjpks';
 //alert(elem);
+console.log('ПРИвет');
