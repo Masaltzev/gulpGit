@@ -15,36 +15,12 @@ html(lang="ru-RU")
 			.container
 				.d-flex.bd-highlight.border
 					.p-2.flex-fill.bd-highlight 
-						canvas#cl(width = 400 Height = 200 ) Обновите браузер
-						script(src = 'js/main.js')
+						
 					.p-2.flex-fill.bd-highlight.border-right.border-left
-						form
-							.form-group
-								label(for="fWidth") Ширина
-								input.form-control#fWidth(type="text" aria-describedby="emailHelp" placeholder="Ширина")
-							.form-group
-								label(for="fHeight") Высота
-								input.form-control#fHeight(type="text" placeholder="Высота")
-							button.btn.btn-primary(type="submit" onclick="paint()") Отправить
-							|
-							|<?php $fwidth=($_POST['fwidth']);?>
+						
 
 					.p-2.flex-fill.bd-highlight
-						//- h3 #[span Тут ] и вот
-						#app
-							h3 Hello {{ name }}
-						//-button(onclick="dt('fWidth','fHeight')") нажми
-						#date
-						form
-							.form-group
-								label(for = 'selectOpt') Стиль
-								select#selectOpt.form-control
-									option(value = 'False' name = 'one')
-									option(value = 'Rock' name = 'one') Рок
-									option(value = 'Jaz' name = 'one' ) Джаз
-									option(value = 'Blues' name = 'one') Блюз
-									option(value = 'Disko' name = 'one' selected) Диско
-									option(value = 'Klasic' name = 'one') Классика
+						
 
 		include ../layout/footer.pug
 

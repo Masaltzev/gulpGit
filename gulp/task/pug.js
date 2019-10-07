@@ -10,4 +10,11 @@ module.exports = function () {
             .pipe($.gulp.dest('build'))
             .on('end', $.bs.reload);
     });
+
+    // $.gulp.task('pug2', function () {
+    //     return $.gulp.src('src/pug/**/*.pug')
+    //         .pipe($.glp.pug({
+    //             pretty: true
+    //         }))
+    // });
 }
