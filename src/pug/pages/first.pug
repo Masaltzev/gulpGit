@@ -1,45 +1,77 @@
 doctype html
 html(lang="ru-RU")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		link(rel="stylesheet" href="css/main.css")
-		title Hello world
-	body
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel="stylesheet" href="css/main.css")
+        title Hello world
+    body
 
 
-		include ../layout/head.pug
-		
-		section.mt-2.mb-2
-			.container
-				.d-flex.bd-highlight.border
-					.p-2.flex-fill.bd-highlight 
-						
-					.p-2.flex-fill.bd-highlight.border-right.border-left
-						
+        include ../layout/head.pug
 
-					.p-2.flex-fill.bd-highlight
-						
+        section.mt-2.mb-2
+            .container
+                .d-flex.bd-highlight.border
+                    .p-2.flex-fill.bd-highlight
+                        form(action="first.php" method="post")
+                            fieldset
+                                legend Введите данные о ссуде:
+                                .form-group.row
+                                    label.col-sm-6.col-form-label Размер ссуды в любой валюте:
+                                    .col-sm-3
+                                        input.form-control(type="text" name="sizeS" onchange = "calculate();")
+                                .form-group.row
+                                    label.col-sm-6.col-form-label Годовой процент:
+                                    .col-sm-3
+                                        input.form-control(type="text" name="yareS" onchange = "calculate();")
+                                .form-group.row
+                                    label.col-sm-6.col-form-label Срок ссуды в годах:
+                                    .col-sm-3
+                                        input.form-control(type="text" name="summS" onchange = "calculate();")
+                                .form-group.row
+                                    .col-sm-6
+                                    .col-sm-3
+                                        button.btn.btn-primary.form-control(type="submit"  onclick = "calculate();") Рассчитать
 
-		include ../layout/footer.pug
+                            fieldset
+                                legend Сведения о платежах:
+                                .form-group.row
+                                    label.col-sm-6.col-form-label Ежемесячный платеж:
+                                    label.col-sm-3.col-form-label#payment
+                                .form-group.row
+                                    label.col-sm-6.col-form-label Общая сумма платежей:
+                                    label.col-sm-3.col-form-label#total
+                                .form-group.row
+                                    label.col-sm-6.col-form-label Общая сумма платежей по процентам:
+                                    label.col-sm-3.col-form-label#totalInterest
 
 
-		script(src="js/libs.min.js")
-		script(src="js/main.js")
-		script(src="../node_modules/bootstrap/dist/js/bootstrap.min.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous")
-		script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
-		script(src="js/oop.js")
-		script(src = "js/vue.js")
-		script(src = "js/lessons.js")
+                    .p-2.flex-fill.bd-highlight.border-right.border-left
 
-		//- script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		//- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		//- crossorigin="anonymous")
 
-		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous")
+                    .p-2.flex-fill.bd-highlight
+
+
+        include ../layout/footer.pug
+
+
+        script(src="js/libs.min.js")
+        script(src="js/main.js")
+        script(src="../node_modules/bootstrap/dist/js/bootstrap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="js/oop.js")
+        script(src = "js/vue.js")
+        script(src = "js/lessons.js")
+
+        //- script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        //- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        //- crossorigin="anonymous")
+
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous")

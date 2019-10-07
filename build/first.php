@@ -26,7 +26,52 @@
     <section class="mt-2 mb-2">
       <div class="container">
         <div class="d-flex bd-highlight border">
-          <div class="p-2 flex-fill bd-highlight"> </div>
+          <div class="p-2 flex-fill bd-highlight">
+            <form action="first.php" method="post">
+              <fieldset>
+                <legend>Введите данные о ссуде:</legend>
+                <div class="form-group row">
+                  <label class="col-sm-6 col-form-label">Размер ссуды в любой валюте:</label>
+                  <div class="col-sm-3">
+                    <input class="form-control" type="text" name="sizeS" onchange="calculate();">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-6 col-form-label">Годовой процент:</label>
+                  <div class="col-sm-3">
+                    <input class="form-control" type="text" name="yareS" onchange="calculate();">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-6 col-form-label">Срок ссуды в годах:</label>
+                  <div class="col-sm-3">
+                    <input class="form-control" type="text" name="summS" onchange="calculate();">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6"></div>
+                  <div class="col-sm-3">
+                    <button class="btn btn-primary form-control" type="submit" onclick="calculate();">Рассчитать</button>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Сведения о платежах:</legend>
+                <div class="form-group row">
+                  <label class="col-sm-6 col-form-label">Ежемесячный платеж:</label>
+                  <label class="col-sm-3 col-form-label" id="payment"></label>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-6 col-form-label">Общая сумма платежей:</label>
+                  <label class="col-sm-3 col-form-label" id="total"></label>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-6 col-form-label">Общая сумма платежей по процентам:</label>
+                  <label class="col-sm-3 col-form-label" id="totalInterest"></label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
           <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
           <div class="p-2 flex-fill bd-highlight"></div>
         </div>
