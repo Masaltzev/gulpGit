@@ -15,25 +15,25 @@ html(lang="ru-RU")
             .container
                 .d-flex.bd-highlight.border
                     .p-2.flex-fill.bd-highlight
-                        form(action="first.php" method="post")
+                        form(name = "ssuda")
                             fieldset
                                 legend Введите данные о ссуде:
                                 .form-group.row
                                     label.col-sm-6.col-form-label Размер ссуды в любой валюте:
                                     .col-sm-3
-                                        input.form-control(type="text" name="sizeS" onchange = "calculate();")
+                                        input.form-control(type="number" name="sizeS" onchange = "calculate();" value = "200000") 
                                 .form-group.row
                                     label.col-sm-6.col-form-label Годовой процент:
                                     .col-sm-3
-                                        input.form-control(type="text" name="yareS" onchange = "calculate();")
+                                        input.form-control(type="text" name="yearsS" onchange = "calculate();" value = "6.5")
                                 .form-group.row
                                     label.col-sm-6.col-form-label Срок ссуды в годах:
                                     .col-sm-3
-                                        input.form-control(type="text" name="summS" onchange = "calculate();")
+                                        input.form-control(type="number" name="summS" onchange = "calculate();" value = "30")
                                 .form-group.row
                                     .col-sm-6
                                     .col-sm-3
-                                        button.btn.btn-primary.form-control(type="submit"  onclick = "calculate();") Рассчитать
+                                        button.btn.btn-primary.form-control(type="submit"  onclick = "calculate();" value = "Рассчитать")
 
                             fieldset
                                 legend Сведения о платежах:
@@ -67,6 +67,7 @@ html(lang="ru-RU")
         script(src="js/oop.js")
         script(src = "js/vue.js")
         script(src = "js/lessons.js")
+        script(src = "js/first.js")
 
         //- script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         //- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -27,49 +27,23 @@
       <div class="container">
         <div class="d-flex bd-highlight border">
           <div class="p-2 flex-fill bd-highlight">
-            <form name="ssuda">
-              <fieldset>
-                <legend>Введите данные о ссуде:</legend>
-                <div class="form-group row">
-                  <label class="col-sm-6 col-form-label">Размер ссуды в любой валюте:</label>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="sizeS" onchange="calculate();" value="200000">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-6 col-form-label">Годовой процент:</label>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="text" name="yearsS" onchange="calculate();" value="6.5">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-6 col-form-label">Срок ссуды в годах:</label>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="summS" onchange="calculate();" value="30">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6"></div>
-                  <div class="col-sm-3">
-                    <button class="btn btn-primary form-control" type="submit" onclick="calculate();" value="Рассчитать"></button>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Сведения о платежах:</legend>
-                <div class="form-group row">
-                  <label class="col-sm-6 col-form-label">Ежемесячный платеж:</label>
-                  <label class="col-sm-3 col-form-label" id="payment"></label>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-6 col-form-label">Общая сумма платежей:</label>
-                  <label class="col-sm-3 col-form-label" id="total"></label>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-6 col-form-label">Общая сумма платежей по процентам:</label>
-                  <label class="col-sm-3 col-form-label" id="totalInterest"></label>
-                </div>
-              </fieldset>
+            <form action="" method="post" name="choiсe">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox2" value="option2" checked>
+                <label class="form-check-label" for="inlineCheckbox2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox4" value="option4">
+                <label class="form-check-label" for="inlineCheckbox4">4</label>
+              </div>
             </form>
           </div>
           <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
