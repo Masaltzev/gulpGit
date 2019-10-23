@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <title>Hello world</title>
+    <title>Верстаем</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,43 +26,9 @@
     <section class="mt-2 mb-2">
       <div class="container">
         <div class="d-flex bd-highlight border">
-          <div class="p-2 flex-fill bd-highlight"> 
-            <canvas id="cl" width="400" Height="200">Обновите браузер</canvas>
-            <script src="js/main.js"></script>
-          </div>
-          <div class="p-2 flex-fill bd-highlight border-right border-left">
-            <form>
-              <div class="form-group">
-                <label for="fWidth">Ширина</label>
-                <input class="form-control" id="fWidth" type="text" aria-describedby="emailHelp" placeholder="Ширина">
-              </div>
-              <div class="form-group">
-                <label for="fHeight">Высота</label>
-                <input class="form-control" id="fHeight" type="text" placeholder="Высота">
-              </div>
-              <button class="btn btn-primary" type="submit" onclick="paint()">Отправить</button>
-              <?php $fwidth=($_POST['fwidth']);?>
-            </form>
-          </div>
-          <div class="p-2 flex-fill bd-highlight">
-            <div id="app">
-              <h3>Hello {{ name }}</h3>
-            </div>
-            <div id="date"></div>
-            <form>
-              <div class="form-group">
-                <label for="selectOpt">Стиль</label>
-                <select class="form-control" id="selectOpt">
-                  <option value="False" name="one"></option>
-                  <option value="Rock" name="one">Рок</option>
-                  <option value="Jaz" name="one">Джаз</option>
-                  <option value="Blues" name="one">Блюз</option>
-                  <option value="Disko" name="one" selected>Диско</option>
-                  <option value="Klasic" name="one">Классика</option>
-                </select>
-              </div>
-            </form>
-          </div>
+          <div class="p-2 flex-fill bd-highlight"></div>
+          <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
+          <div class="p-2 flex-fill bd-highlight"></div>
         </div>
       </div>
     </section>
@@ -81,6 +47,7 @@
     <script src="js/oop.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/lessons.js"></script>
+    <script src="js/first.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
