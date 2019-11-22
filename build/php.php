@@ -26,26 +26,7 @@
     <section class="mt-2 mb-2">
       <div class="container">
         <div class="d-flex bd-highlight border">
-          <div class="p-2 flex-fill bd-highlight">
-            <form action="" method="post" name="choiсe">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">1</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox2" value="option2" checked>
-                <label class="form-check-label" for="inlineCheckbox2">2</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">3</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox4" value="option4">
-                <label class="form-check-label" for="inlineCheckbox4">4</label>
-              </div>
-            </form>
-          </div>
+          <div class="p-2 flex-fill bd-highlight"></div>
           <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
           <div class="p-2 flex-fill bd-highlight"></div>
         </div>
