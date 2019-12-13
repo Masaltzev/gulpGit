@@ -26,19 +26,15 @@
     <section class="mt-2 mb-2">
       <div class="container">
         <div class="d-flex bd-highlight border">
-          <div class="p-2 flex-fill bd-highlight">
-            <?php
-            try {
-            $conPDO = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
-            }
-            $dbh = null;
-            } 
-            catch (PDOException $e) {
-            print "Error!: " . $e->getMessage() . "<br/>";
-            die();
-            }
-            ?>                        
-          </div>
+          <div class="p-2 flex-fill bd-highlight"></div>
+          <?php
+          <try>{</try>$conPDO = new PDO('mysql:host=localhost;dbname=test', $user, $pass);                        
+          $dbh = null;
+          }
+          <catch>(PDOException $e) {</catch>print "Error!: " . $e->getMessage() . "<br/>";
+          die();
+          }
+          ?>                        
           <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
           <div class="p-2 flex-fill bd-highlight"></div>
         </div>
