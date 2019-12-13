@@ -15,17 +15,10 @@ html(lang="ru-RU")
             .container
                 .d-flex.bd-highlight.border
                     .p-2.flex-fill.bd-highlight
-                        |<?php
-                        |try {
-                        |$conPDO = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
-                        |}
-                        |$dbh = null;
-                        |} 
-                        |catch (PDOException $e) {
-                        |print "Error!: " . $e->getMessage() . "<br/>";
-                        |die();
-                        |}
-                        |?>                        
+                    |
+                    |<?php
+                    |include 'php/mysql.php';
+                    |?>                        
                     .p-2.flex-fill.bd-highlight.border-right.border-left
                         
                         
