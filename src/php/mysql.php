@@ -38,7 +38,9 @@ function dbQr($conPDO){
 function dbinto($conPDO){
     $sql3 = "INSERT INTO practice.user(
         `users_name`, `users_age`)
-        VALUES ('Boris', 36)";
+        VALUES 
+        ('Boris', 36),
+        ('Boris2', 362)";
     $conPDO->exec($sql3);
     $listEcho = "</br>"."Record created";
     echo $listEcho;
