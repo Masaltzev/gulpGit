@@ -1,24 +1,24 @@
-var example = document.getElementById("cl"),
+let example = document.getElementById("cl"),
 	context = example.getContext('2d');
 
 
 function paint() {
 	let widthX = document.getElementById('fWidth').value;
-	let heigthY = document.getElementById('fHeight').value;
-	return widthX, heigthY;
+	let heightY = document.getElementById('fHeight').value;
+	return heightY, widthX;
 }
 
 console.log(widthX);
 console.log('Козлы');
 
 
-var wS = widthX / (widthX / 200 / (widthX / heigthY));
-var hS = heigthY / (heigthY / 200);
-var w = 10;
-var xMT = (400 - wS) / 2;
+let wS = widthX / (widthX / 200 / (widthX / heigthY));
+let hS = heigthY / (heigthY / 200);
+let w = 10;
+let xMT = (400 - wS) / 2;
 //Console.log(widthX);
-var yMT = 0;
-var xyMT = 0;
+let yMT = 0;
+let xyMT = 0;
 context.strokeStyle = 'gray';
 context.fillStyle = '#f9f9f9';
 context.beginPath(); //top --- 1\4---3/2---
