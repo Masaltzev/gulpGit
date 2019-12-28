@@ -11,7 +11,7 @@ function dbConn(){
         //$dbh = null;
         dbCrt($dbName,$conPDO);
         dbQr($conPDO);
-        dbinto($conPDO);
+        //dbinto($conPDO);
     }
     catch (PDOException $e) {
         print "Error!: " . $e->getMessage() . "<br/>";
