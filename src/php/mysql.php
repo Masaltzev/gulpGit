@@ -40,7 +40,7 @@ function dbinto($conPDO){
         `users_name`, `users_age`)
         VALUES 
         ('Boris', 36),
-        ('Boris2', 52)";
+        ('Boris2', 100)";
     $conPDO->exec($sql3);
     $listEcho = "</br>"."Record created";
     echo $listEcho;
