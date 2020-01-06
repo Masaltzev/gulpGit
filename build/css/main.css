@@ -107,7 +107,11 @@ a.icon {
   border: 1px solid #E9ECEF;
   margin: 10px;
   padding: 10px;
-  position: relative; }
+  position: relative;
+  transform: perspective(300px) rotate3d(0, 1, 0, 10deg); }
+
+.product:hover {
+  transform: perspective(300px) rotate3d(0, 0, 0, 10deg); }
 
 .productImageWrapper {
   margin-bottom: 40px; }
@@ -115,7 +119,8 @@ a.icon {
 .productImage {
   display: block;
   margin: 0 auto;
-  max-width: 100%; }
+  max-width: 100%;
+  perspective: 45px; }
 
 .productBody {
   display: flex;
