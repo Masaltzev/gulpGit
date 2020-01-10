@@ -19,20 +19,21 @@ html(lang="ru-RU")
                             .product
                                 .productImageWrapper|
                                     |
-                                    img(src="http://lorempixel.com/200/200/sports/").productImage|
+                                    img(src="http://lorempixel.com/200/200/cats/").productImage|
                                 |
                                 .productBody|
                                     |
                                     a(href="").productName Наименование
                                     |
                                     |
-                                    span.productPrice 0000
+                                    span.productPrice 100
                                 .productFooter
                                     .btnM.productBuy Купить
                                     .counter
-                                        .counterBtn -
+                                        .counterBtn(data-direction='minus') -
                                         input(value="1").counterValue
-                                        .counterBtn +
+                                        .counterBtn(data-direction='plus') +
+                                    span.productTotalPrice
                     .p-2.flex-fill.bd-highlight.border-right.border-left
 
 
