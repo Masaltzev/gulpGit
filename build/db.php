@@ -32,7 +32,7 @@
         <div class="d-flex bd-highlight border">
           <div class="p-2 flex-fill bd-highlight"></div>
           <?php
-          include 'php/mysql.php';
+          include 'php/dbConnect.php';
           ?>                        
           <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
           <div class="p-2 flex-fill bd-highlight"></div>

@@ -15,24 +15,24 @@ class worker{
     }
     public function setAge($age): void
     {
-//        if ($age<40) {
             $this->age = $age;
-//        }
     }
     public function setSalary($salary): void
     {
         $this->salary = $salary;
     }
-
     public function checkAge(){
-       if ($this->age<40){
-           return $this->age;
-       }
+        if ($this->age>0 and $this->age<100){
+            return  $this->age;
+        }
+        else{
+            $this->age="";
+        }
     }
 
     public function getAge()
     {
-        $this->checkAge();
+            return $this->checkAge();
     }
     public function getSalary()
     {
@@ -43,8 +43,8 @@ $work1=new worker();
 $work2=new worker();
 $work1->setName('ivan');
 $work2->setName('vano');
-$work1->setAge('30');
-$work2->setAge('35');
+$work1->setAge('26');
+$work2->setAge('28');
 $work1->setSalary('2000');
 $work2->setSalary('700');
 echo $work1->getName();

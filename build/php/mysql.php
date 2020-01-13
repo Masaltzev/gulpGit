@@ -4,7 +4,7 @@ function dbConn(){
     $serverName = "localhost";                  
     $user = "root";
     $pass = "";
-    $dbName = "practice";
+    $dbName = "practice2";
     try {
         $conPDO = new PDO("mysql:host=$serverName;dbname=mysql", $user, $pass);
         // $conPDO -> setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);                 
