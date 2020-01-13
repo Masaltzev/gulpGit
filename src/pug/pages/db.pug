@@ -15,10 +15,26 @@ html(lang="ru-RU")
             .container
                 .d-flex.bd-highlight.border
                     .p-2.flex-fill.bd-highlight
-                    |
+                        |
                     |<?php
                     |include 'php/dbConnect.php';
-                    |?>                        
+                    |?>
+                    table
+                        tr
+                            th №
+                            th Имя
+                            th Возраст
+                        |<?php
+                        |foreach ($users as $value){
+                        |?>
+                        tr
+                            td
+                                a(href="#")#get <?= $value['user_id'];?>
+                            td <?= $value['users_name'];?>
+                            td <?= $value['users_age'];?>
+                        |<?php
+                        |};
+                        |?>
                     .p-2.flex-fill.bd-highlight.border-right.border-left
                     //- |
                     //- |<?php

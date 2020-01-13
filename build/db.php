@@ -30,10 +30,25 @@
     <section class="mt-2 mb-2">
       <div class="container">
         <div class="d-flex bd-highlight border">
-          <div class="p-2 flex-fill bd-highlight"></div>
-          <?php
+          <div class="p-2 flex-fill bd-highlight"></div><?php
           include 'php/dbConnect.php';
-          ?>                        
+          ?>
+          <table>
+            <tr>
+              <th>№</th>
+              <th>Имя</th>
+              <th>Возраст</th>
+            </tr><?php
+            foreach ($users as $value){
+            ?>
+            <tr>
+              <td><a href="#" id="get"><?= $value['user_id'];?></a></td>
+              <td><?= $value['users_name'];?></td>
+              <td><?= $value['users_age'];?></td>
+            </tr><?php
+            };
+            ?>
+          </table>
           <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
           <div class="p-2 flex-fill bd-highlight"></div>
         </div>
