@@ -30,7 +30,8 @@
     <section class="mt-2 mb-2">
       <div class="container">
         <div class="d-flex bd-highlight border">
-          <div class="p-2 flex-fill bd-highlight"></div><?php
+          <div class="p-2 flex-fill bd-highlight"></div>
+          <?php
           include 'php/dbConnect.php';
           ?>
           <table>
@@ -42,7 +43,7 @@
             foreach ($users as $value){
             ?>
             <tr>
-              <td><a href="#" id="get"><?= $value['user_id'];?></a></td>
+              <td><a href="#" onclick="change()" id="get"><?= $value['user_id'];?></a></td>
               <td><?= $value['users_name'];?></td>
               <td><?= $value['users_age'];?></td>
             </tr><?php
@@ -51,6 +52,17 @@
           </table>
           <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
           <div class="p-2 flex-fill bd-highlight"></div>
+          <form action="#" method="POST">
+            <label>Имя
+              <input type="text" id="set1" name="inpName" placeholder="Имя">
+            </label><br>
+            <label>Возраст
+              <input type="text" id="set2" name="inpAge" placeholder="Возраст">
+            </label><br>
+            <input type="submit" name="submit" value="Изменить">
+            <input type="submit" name="submit" value="Добавить">
+            <input type="submit" name="submit" value="Удалить">
+          </form>
         </div>
       </div>
     </section>
@@ -70,6 +82,7 @@
     <script src="js/vue.js"></script>
     <script src="js/lessons.js"></script>
     <script src="js/first.js"></script>
+    <script src="js/db.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ html(lang="ru-RU")
             .container
                 .d-flex.bd-highlight.border
                     .p-2.flex-fill.bd-highlight
-                        |
+                    |
                     |<?php
                     |include 'php/dbConnect.php';
                     |?>
@@ -29,7 +29,7 @@ html(lang="ru-RU")
                         |?>
                         tr
                             td
-                                a(href="#")#get <?= $value['user_id'];?>
+                                a(href="#" onclick="change()")#get <?= $value['user_id'];?>
                             td <?= $value['users_name'];?>
                             td <?= $value['users_age'];?>
                         |<?php
@@ -41,6 +41,16 @@ html(lang="ru-RU")
                     //- |echo $listEcho;
                     //- |?>                        
                     .p-2.flex-fill.bd-highlight
+                    form(action = "#" method="POST")
+                        label Имя
+                            input(type="text", id="set1" name="inpName" placeholder="Имя")
+                        br
+                        label Возраст
+                            input(type="text", id="set2" name="inpAge" placeholder="Возраст")
+                        br
+                        input(type="submit", name="submit" value="Изменить")
+                        input(type="submit", name="submit" value="Добавить")
+                        input(type="submit", name="submit" value="Удалить")
 
 
         include ../layout/footer.pug
@@ -57,6 +67,7 @@ html(lang="ru-RU")
         script(src = "js/vue.js")
         script(src = "js/lessons.js")
         script(src = "js/first.js")
+        script(src = "js/db.js")
 
         //- script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         //- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
