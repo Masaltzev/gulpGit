@@ -29,7 +29,7 @@ html(lang="ru-RU")
                         |?>
                         tr
                             td
-                                a(href="#" onclick="change()")#get <?= $value['user_id'];?>
+                                a(href="db.php?id=<?= $value['user_id'];?>" onclick="change()") <?= $value['user_id'];?>
                             td <?= $value['users_name'];?>
                             td <?= $value['users_age'];?>
                         |<?php
@@ -41,9 +41,11 @@ html(lang="ru-RU")
                     //- |echo $listEcho;
                     //- |?>                        
                     .p-2.flex-fill.bd-highlight
+                    |<?php
+                    |$id=$_GET['id'];?>
                     form(action = "#" method="POST")
-                        label Имя
-                            input(type="text", id="set1" name="inpName" placeholder="Имя")
+                        label Имя <?=$id;?>
+                            input(type="text", id="set1" name="inpName" placeholder="Имя" value="<?=$id;?>")
                         br
                         label Возраст
                             input(type="text", id="set2" name="inpAge" placeholder="Возраст")
@@ -51,7 +53,6 @@ html(lang="ru-RU")
                         input(type="submit", name="submit" value="Изменить")
                         input(type="submit", name="submit" value="Добавить")
                         input(type="submit", name="submit" value="Удалить")
-
 
         include ../layout/footer.pug
 

@@ -43,7 +43,7 @@
             foreach ($users as $value){
             ?>
             <tr>
-              <td><a href="#" onclick="change()" id="get"><?= $value['user_id'];?></a></td>
+              <td><a href="db.php?id=&lt;?= $value['user_id'];?&gt;" onclick="change()"><?= $value['user_id'];?></a></td>
               <td><?= $value['users_name'];?></td>
               <td><?= $value['users_age'];?></td>
             </tr><?php
@@ -51,10 +51,11 @@
             ?>
           </table>
           <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
-          <div class="p-2 flex-fill bd-highlight"></div>
+          <div class="p-2 flex-fill bd-highlight"></div><?php
+          $id=$_GET['id'];?>
           <form action="#" method="POST">
-            <label>Имя
-              <input type="text" id="set1" name="inpName" placeholder="Имя">
+            <label>Имя <?=$id;?>
+              <input type="text" id="set1" name="inpName" placeholder="Имя" value="&lt;?=$id;?&gt;">
             </label><br>
             <label>Возраст
               <input type="text" id="set2" name="inpAge" placeholder="Возраст">
