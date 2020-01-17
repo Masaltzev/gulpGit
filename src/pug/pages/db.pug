@@ -29,7 +29,7 @@ html(lang="ru-RU")
                         |?>
                         tr
                             td
-                                a(href="db.php?id=<?= $value['user_id'];?>" onclick="change()") <?= $value['user_id'];?>
+                                a(href!="db.php?id=<?= $value['user_id'];?>" onclick="change()") <?= $value['user_id'];?>
                             td <?= $value['users_name'];?>
                             td <?= $value['users_age'];?>
                         |<?php
@@ -44,16 +44,22 @@ html(lang="ru-RU")
                     |<?php
                     |$id=$_GET['id'];?>
                     form(action = "#" method="POST")
-                        label Имя <?=$id;?>
-                            input(type="text", id="set1" name="inpName" placeholder="Имя" value="<?=$id;?>")
+                        |<?php
+                        |$users2=$conn->query("SELECT * FROM `user` WHERE `user_id` = $id");
+                        |foreach ($users2 as $value2){
+                        |?>
+                        label Имя
+                            input(type="text", id="set1" name="inpName" placeholder="Имя" value!="<?=$value2['users_name'];?>")
                         br
                         label Возраст
-                            input(type="text", id="set2" name="inpAge" placeholder="Возраст")
+                            input(type="text", id="set2" name="inpAge" placeholder="Возраст" value!="<?=$value2['users_age'];?>")
+                        |<?php
+                        |};
+                        |?>
                         br
                         input(type="submit", name="submit" value="Изменить")
                         input(type="submit", name="submit" value="Добавить")
                         input(type="submit", name="submit" value="Удалить")
-
         include ../layout/footer.pug
 
 

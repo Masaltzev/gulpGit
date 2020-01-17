@@ -40,6 +40,6 @@ class dbConnect
 $conn=new dbConnect();
 //$conn->execute("INSERT INTO `user` (users_name, users_age)
 //    VALUES ('Вадим',36), ('Алексей',42)");
-$users = $conn->query("SELECT `user_id`,`users_name`, `users_age`
-FROM `user` LIMIT 2");
+$users = $conn->query("SELECT * FROM `user` LIMIT 2");
 //print_r($users);
+//$users2=$conn->query("SELECT * FROM `user` WHERE `user_id` = $id");

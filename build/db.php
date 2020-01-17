@@ -43,7 +43,7 @@
             foreach ($users as $value){
             ?>
             <tr>
-              <td><a href="db.php?id=&lt;?= $value['user_id'];?&gt;" onclick="change()"><?= $value['user_id'];?></a></td>
+              <td><a href="db.php?id=<?= $value['user_id'];?>" onclick="change()"><?= $value['user_id'];?></a></td>
               <td><?= $value['users_name'];?></td>
               <td><?= $value['users_age'];?></td>
             </tr><?php
@@ -54,12 +54,18 @@
           <div class="p-2 flex-fill bd-highlight"></div><?php
           $id=$_GET['id'];?>
           <form action="#" method="POST">
-            <label>Имя <?=$id;?>
-              <input type="text" id="set1" name="inpName" placeholder="Имя" value="&lt;?=$id;?&gt;">
+            <?php
+            $users2=$conn->query("SELECT * FROM `user` WHERE `user_id` = $id");
+            foreach ($users2 as $value2){
+            ?>
+            <label>Имя
+              <input type="text" id="set1" name="inpName" placeholder="Имя" value="<?=$value2['users_name'];?>">
             </label><br>
             <label>Возраст
-              <input type="text" id="set2" name="inpAge" placeholder="Возраст">
-            </label><br>
+              <input type="text" id="set2" name="inpAge" placeholder="Возраст" value="<?=$value2['users_age'];?>">
+            </label><?php
+            };
+            ?><br>
             <input type="submit" name="submit" value="Изменить">
             <input type="submit" name="submit" value="Добавить">
             <input type="submit" name="submit" value="Удалить">
