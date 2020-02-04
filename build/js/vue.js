@@ -1,6 +1,6 @@
-new Vue({
-    el: '#app',
-    data: {
-        name: 'vue!!!'
-    }
-});
+// new Vue({
+//     el: '#app',
+//     data: {
+//         name: 'vue!!!'
+//     }
+// });

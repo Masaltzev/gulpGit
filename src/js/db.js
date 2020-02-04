@@ -1,3 +1,3 @@
-function change() {
+const change = () => {
     //alert("ok");
-}
+};

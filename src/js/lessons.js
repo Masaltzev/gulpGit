@@ -2,6 +2,6 @@
 //     widthX = document.getElementById(a).value;
 //     heigthY = document.getElementById(b).value;
 // }
-let elem = 'rjpks';
+// let elem = 'rjpks';
 //alert(elem);
-console.log('ПРИвет');
+// console.log('ПРИвет');

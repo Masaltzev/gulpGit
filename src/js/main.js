@@ -1,5 +1,4 @@
-let example = document.getElementById("cl"),
-	context = example.getContext('2d');
+let example = document.getElementById("cl"),	context = example.getContext("2d");
 
 
 function paint() {
@@ -8,8 +7,8 @@ function paint() {
 	return heightY, widthX;
 }
 
-console.log(widthX);
-console.log('Козлы');
+// console.log(widthX);
+// console.log('Козлы');
 
 
 let wS = widthX / (widthX / 200 / (widthX / heigthY));

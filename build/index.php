@@ -20,8 +20,8 @@
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">php</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="db.php">Database</a><a class="dropdown-item" href="oop.php">Трепачев</a><a class="dropdown-item" href="#">Something else here</a></div>
             </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Пусто</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Пусто</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Минин</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="Minin_JS.php">JS</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
             </li>
           </ul>
         </div>
@@ -49,10 +49,9 @@
             </form>
           </div>
           <div class="p-2 flex-fill bd-highlight">
-            <div id="app">
-              <h3>Hello {{ name }}</h3>
-            </div>
-            <div id="date"></div>
+            <!--#app//h3 Hello {{ name }}
+            -->
+            <!--#date-->
             <form>
               <div class="form-group">
                 <label for="selectOpt">Стиль</label>
@@ -79,7 +78,7 @@
     </footer>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--script(src="../node_modules/bootstrap/dist/js/bootstrap.js")-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/oop.js"></script>
