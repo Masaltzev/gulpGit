@@ -14,20 +14,19 @@ html(lang="ru-RU")
 		section.mt-2.mb-2
 			.container
 				.d-flex.bd-highlight.border
-					.p-2.flex-fill.bd-highlight 
+					.p-2.flex-fill.bd-highlight
 						canvas#cl(width = 400 Height = 200 ) Обновите браузер
-						script(src = 'js/main.js')
 					.p-2.flex-fill.bd-highlight.border-right.border-left
 						form
 							.form-group
 								label(for="fWidth") Ширина
-								input.form-control#fWidth(type="text" aria-describedby="emailHelp" placeholder="Ширина")
+								input.form-control#fWidth(type="text" placeholder="Ширина" name="ww" value="1000")
 							.form-group
 								label(for="fHeight") Высота
-								input.form-control#fHeight(type="text" placeholder="Высота")
+								input.form-control#fHeight(type="text" placeholder="Высота" name="hh" value="1000")
 							button.btn.btn-primary(type="submit" onclick="paint()") Отправить
 							|
-							|<?php $fwidth=($_POST['fwidth']);?>
+							|<?php $fwidth=($_POST['fWidth']);?>
 
 					.p-2.flex-fill.bd-highlight
 						//- h3 #[span Тут ] и вот

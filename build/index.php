@@ -30,22 +30,21 @@
     <section class="mt-2 mb-2">
       <div class="container">
         <div class="d-flex bd-highlight border">
-          <div class="p-2 flex-fill bd-highlight"> 
+          <div class="p-2 flex-fill bd-highlight">
             <canvas id="cl" width="400" Height="200">Обновите браузер</canvas>
-            <script src="js/main.js"></script>
           </div>
           <div class="p-2 flex-fill bd-highlight border-right border-left">
             <form>
               <div class="form-group">
                 <label for="fWidth">Ширина</label>
-                <input class="form-control" id="fWidth" type="text" aria-describedby="emailHelp" placeholder="Ширина">
+                <input class="form-control" id="fWidth" type="text" placeholder="Ширина" name="ww" value="1000">
               </div>
               <div class="form-group">
                 <label for="fHeight">Высота</label>
-                <input class="form-control" id="fHeight" type="text" placeholder="Высота">
+                <input class="form-control" id="fHeight" type="text" placeholder="Высота" name="hh" value="1000">
               </div>
               <button class="btn btn-primary" type="submit" onclick="paint()">Отправить</button>
-              <?php $fwidth=($_POST['fwidth']);?>
+              <?php $fwidth=($_POST['fWidth']);?>
             </form>
           </div>
           <div class="p-2 flex-fill bd-highlight">

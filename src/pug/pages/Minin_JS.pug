@@ -4,6 +4,7 @@ html(lang="ru-RU")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        //script(src = "js/mininJS.js")
         link(rel="stylesheet" href="css/main.css")
         title Верстаем
     body
@@ -15,10 +16,17 @@ html(lang="ru-RU")
             .container
                 .d-flex.bd-highlight.border
                     .p-2.flex-fill.bd-highlight
-
+                        canvas#cnv(width=400 height=200) Обновите браузер
+                        //script(src = "js/mininJS.js")
                     .p-2.flex-fill.bd-highlight.border-right.border-left
-                        
-                        
+                        form
+                            .form-group
+                                label(for="w") ширина
+                                input.form-control#w(type="text" value="1500" onchange="paint()")
+                            .form-group
+                                label(for="h") высота
+                                input.form-control#h(type="text" value="1000" onchange="paint()")
+                            button.btn.btn-primary(type="submit" onclick="paint()") Отправить
                     .p-2.flex-fill.bd-highlight
 
 
@@ -29,8 +37,8 @@ html(lang="ru-RU")
         script(src="js/main.js")
         //script(src="../node_modules/bootstrap/dist/js/bootstrap.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous")
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous")
         script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
         script(src="js/oop.js")
         script(src = "js/vue.js")
@@ -43,5 +51,5 @@ html(lang="ru-RU")
         //- crossorigin="anonymous")
 
         script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous")
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous")
