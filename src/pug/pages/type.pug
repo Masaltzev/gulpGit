@@ -30,8 +30,32 @@ html(lang="ru-RU")
                                 label.form-check-label(for="inlineCheckbox4") 4
 
                     .p-2.flex-fill.bd-highlight.border-right.border-left
-                        
-                        
+                     section#main
+                        .container
+                            .calc
+                                h2 Расчет стоимости
+                                label(for="card_edition") выберите тираж
+                                select#card_edition.form-control(name="edition")
+                                    option(value="30") 30
+                                    option(value="60") 60
+                                    option(value="90") 90
+                                    option(value="120") 120
+                                    option(value="150") 150
+                                    option(value="180") 180
+                                    option(value="210") 210
+                                label(for="card_paper") выберите бумагу
+                                select#card_paper.form-control(name="card_paper")
+                                    option(value="Белая>") Белая
+                                    option(value="Серая") Серая
+                                    option(value="Мелованная") Мелованная
+                                label(for="card_color") выберите цветность
+                                select#card_color.form-control(name="card_color")
+                                    option(value="1черная") 1черная
+                                    option(value="2черная") 2черная
+                                    option(value="1цветная") 1цветная
+                                    option(value="2цветная черная") 2цветная черная
+                                    option(value="2цветная") 2цветная
+
                     .p-2.flex-fill.bd-highlight
 
 

@@ -16,18 +16,36 @@ html(lang="ru-RU")
             .container
                 .d-flex.bd-highlight.border
                     .p-2.flex-fill.bd-highlight
-                        canvas#cnv(width=400 height=200) Обновите браузер
+                        //canvas#cnv(width=400 height=200) Обновите браузер
                         //script(src = "js/mininJS.js")
                     .p-2.flex-fill.bd-highlight.border-right.border-left
                         form
                             .form-group
                                 label(for="w") ширина
-                                input.form-control#w(type="text" value="1500" onchange="paint()")
+                                input.form-control#w(type="text" value="2000" onchange="")
                             .form-group
                                 label(for="h") высота
-                                input.form-control#h(type="text" value="1000" onchange="paint()")
+                                input.form-control#h(type="text" value="1000" onchange="")
                             button.btn.btn-primary(type="submit" onclick="paint()") Отправить
                     .p-2.flex-fill.bd-highlight
+                        canvas#cnv2(width=400 height=200) обновите браузер
+                        br
+                        //svg(viewBox="0,0,50,30")
+                        //    circle(cx="10", cy="10", r="10")
+
+
+                .d-flex.bd-highlight.border
+                    .p-2.flex-fill.bd-highlight
+                        svg(viewBox="0 0 400 200")
+                            defs
+                            g#x0020
+                                metadata#CorelCorpID
+                                polygon.fil0.str0(points="0,0 210,0 203.7,6.3 6.3,6.3")
+
+                    .p-2.flex-fill.bd-highlight.border-right.border-left
+
+                    .p-2.flex-fill.bd-highlight
+                        svg#svg
 
 
         include ../layout/footer.pug
@@ -45,6 +63,7 @@ html(lang="ru-RU")
         script(src = "js/lessons.js")
         script(src = "js/first.js")
         script(src = "js/mininJS.js")
+        script(src = "js/snap.svg-min.js")
 
         //- script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         //- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

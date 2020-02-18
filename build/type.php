@@ -50,7 +50,39 @@
               </div>
             </form>
           </div>
-          <div class="p-2 flex-fill bd-highlight border-right border-left"></div>
+          <div class="p-2 flex-fill bd-highlight border-right border-left">
+            <section id="main">
+              <div class="container">
+                <div class="calc">
+                  <h2>Расчет стоимости</h2>
+                  <label for="card_edition">выберите тираж</label>
+                  <select class="form-control" id="card_edition" name="edition">
+                    <option value="30">30</option>
+                    <option value="60">60</option>
+                    <option value="90">90</option>
+                    <option value="120">120</option>
+                    <option value="150">150</option>
+                    <option value="180">180</option>
+                    <option value="210">210</option>
+                  </select>
+                  <label for="card_paper">выберите бумагу</label>
+                  <select class="form-control" id="card_paper" name="card_paper">
+                    <option value="Белая&gt;">Белая</option>
+                    <option value="Серая">Серая</option>
+                    <option value="Мелованная">Мелованная</option>
+                  </select>
+                  <label for="card_color">выберите цветность</label>
+                  <select class="form-control" id="card_color" name="card_color">
+                    <option value="1черная">1черная</option>
+                    <option value="2черная">2черная</option>
+                    <option value="1цветная">1цветная</option>
+                    <option value="2цветная черная">2цветная черная</option>
+                    <option value="2цветная">2цветная</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+          </div>
           <div class="p-2 flex-fill bd-highlight"></div>
         </div>
       </div>

@@ -54,3 +54,6 @@ echo "<br>";
 echo $work1->getAge()+$work2->getAge();
 echo "<br>";
 echo $work1->getSalary()+$work2->getSalary();
+
+
+
