@@ -31,7 +31,9 @@
       <div class="container">
         <div class="d-flex bd-highlight border">
           <div class="p-2 flex-fill bd-highlight">
-            <canvas id="cl" width="400" Height="200">Обновите браузер</canvas>
+            <svg id="svg">
+              <circle class="circle" cx="150" cy="150" r="50"></circle>
+            </svg>
           </div>
           <div class="p-2 flex-fill bd-highlight border-right border-left">
             <form>
@@ -83,6 +85,7 @@
     <script src="js/oop.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/lessons.js"></script>
+    <script src="js/snap.svg-min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
