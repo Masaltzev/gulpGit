@@ -14,15 +14,34 @@ html(lang="ru-RU")
         section.mt-2.mb-2
             .container
                 .d-flex.bd-highlight.border
-                    .p-2.flex-fill.bd-highlight
-                    |
-                    | <?php
-                    | include 'php/trepachev.php';
-                    | ?>
-                    .p-2.flex-fill.bd-highlight.border-right.border-left
+                    .p-2.flex-fill.bd-highlight.border-right
+                        form(action="#" method="POST")
+                            .form-group
+                                label Ширина
+                                    input.inputW.form-control(type="text" value=1300 onchange="go()")
+                            .form-group
+                                label Высота
+                                    input.inputH.form-control(type="text" value=1400 onchange="go()")
+                            .form-check
+                                input.checkImpost.form-check-input#checkImpost(type="checkbox" onchange="go()")
+                                label.form-check-label(for="checkImpost") Импост
+                            .form-group
+                                input.btnWH.btn.btn-info(type="button" value="Построить" onclick="go()")
 
-
                     .p-2.flex-fill.bd-highlight
+                        svg#svg
+                            polygon.top
+                            polygon.left
+                            polygon.bottom
+                            polygon.right
+                            rect.impost
+                        .form-inline
+                            .form-group.changeW
+                                label(for="changeW")
+                                input#changeW.form-control-sm(type="text" onchange="go()")
+                            .form-group.changeH
+                                label(for="changeH")
+                                input#changeH.form-control-sm(type="text" onchange="go()")
 
 
         include ../layout/footer.pug
@@ -39,8 +58,9 @@ html(lang="ru-RU")
         script(src = "js/vue.js")
         script(src = "js/lessons.js")
         script(src = "js/first.js")
+        script(src = "js/example.js")
 
-        //- script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        //script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         //- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         //- crossorigin="anonymous")
 
