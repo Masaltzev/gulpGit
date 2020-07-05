@@ -44,6 +44,7 @@ class addTable {
 }
 
 let p = new addTable();
+let p = new addTable();
 // p.echo('privet');
 
 // $("#turnir").addClass('tTurnir');
