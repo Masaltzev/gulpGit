@@ -1,7 +1,6 @@
 node_modules/
 Новая папка/
-SelfGulp.code-workspace
 create.bat
-src/sass/sass-snippets.json
-package-lock.json
 build/
+.idea/
+Snap.svg-0.5.1/
