@@ -4,6 +4,4 @@ SelfGulp.code-workspace
 create.bat
 src/sass/sass-snippets.json
 package-lock.json
-package.json
-build/
 build
