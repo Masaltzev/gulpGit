@@ -217,6 +217,34 @@ circle {
   width: 600px;
   height: 300px; }
 
+.title h3 {
+  color: #0f3de8;
+  text-align: center; }
+  .title h3 ul li {
+    list-style: none;
+    color: #6f42c1;
+    text-align: left; }
+  .title h3 .mas {
+    background-color: #0a9a87;
+    width: 200px;
+    height: 200px; }
+  .title h3 .masJs {
+    background-color: #6fb5f1;
+    width: 100px;
+    height: 100px; }
+
+.createTd {
+  border: 1px solid #005cbf;
+  padding: 2px 10px 2px 10px; }
+
+.createTh {
+  background: #f7c5a9;
+  border: 1px solid #005cbf;
+  padding: 2px 10px 2px 10px; }
+
+.fillTd {
+  background: #f7c5a9; }
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

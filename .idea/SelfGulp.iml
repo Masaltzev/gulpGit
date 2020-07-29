@@ -11,5 +11,10 @@
     <orderEntry type="library" name="vue" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="popper" level="application" />
+    <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="vue" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="b99e675b6e" level="application" />
+    <orderEntry type="library" name="@popperjs" level="application" />
   </component>
 </module>

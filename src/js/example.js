@@ -1,10 +1,11 @@
-let svgTop = document.querySelector("polygon.top"),
+let svgTop = document.querySelector('polygon.top'),
     svgLeft = document.querySelector('polygon.left'),
     svgBottom = document.querySelector("polygon.bottom"),
     svgRight = document.querySelector("polygon.right"),
     svgImpost = document.querySelector("rect.impost"),
     checkedImpost = document.getElementById('checkImpost'),
-    inputW, inputH, ramaWidth, impostWidth, x, y, svg, k;
+    inputW, inputH, ramaWidth, impostWidth, x, y, svg, k,
+    rama, lRama;
 
 
 function getInput() {
@@ -29,6 +30,7 @@ function go() {
         pointsBottom = [x, inputH + y, x + ramaWidth, inputH + y - ramaWidth, inputW + x - ramaWidth, inputH + y - ramaWidth, inputW + x, inputH + y],
         pointsRight = [inputW + x, inputH + y, inputW + x - ramaWidth, inputH + y - ramaWidth, inputW + x - ramaWidth, y + ramaWidth, inputW + x, y],
         pointsImpost = [((inputW / 2) - (impostWidth / 2) + x), y + ramaWidth, impostWidth, inputH - (ramaWidth * 2)];
+
     svgTop.setAttribute("points", pointsTop.join(" "));
     svgLeft.setAttribute("points", pointsLeft.join(" "));
     svgBottom.setAttribute("points", pointsBottom.join(" "));
@@ -46,10 +48,4 @@ function go() {
         svgImpost.removeAttribute("height");
     }
 
-
-    // console.log(pointsTop.join(" "));
-    // console.log(pointsLeft.join(" "));
-    // console.log(pointsBottom.join(" "));
-    // console.log(pointsRight.join(" "));
-    // console.log(pointsImpost.join(" "));
 }
