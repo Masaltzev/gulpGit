@@ -1,0 +1,32 @@
+[
+  {
+    "user_id": 1,
+    "users_name": "Алексей",
+    "users_age": 20
+  },
+  {
+    "user_id": 2,
+    "users_name": "Иван",
+    "users_age": 30
+  },
+  {
+    "user_id": 3,
+    "users_name": "Владимир",
+    "users_age": 45
+  },
+  {
+    "user_id": 4,
+    "users_name": "Андрей",
+    "users_age": 23
+  },
+  {
+    "user_id": 5,
+    "users_name": "Дмитрий",
+    "users_age": 33
+  },
+  {
+    "user_id": 6,
+    "users_name": "Петр",
+    "users_age": 55
+  }
+]

@@ -6,7 +6,7 @@ class dbConnect
     private $link;
     private $host="localhost";
     private $user="root";
-    private $pass="";
+    private $pass="root";
     private $base="practice";
     private $dbtable="user";
 

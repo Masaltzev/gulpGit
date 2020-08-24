@@ -23,6 +23,9 @@
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Минин</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="Minin_JS.php">JS</a><a class="dropdown-item" href="crm.php">CRM</a><a class="dropdown-item" href="#">Something else here</a></div>
             </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Доки</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="dogovor.php">Договор</a><a class="dropdown-item" href="football.php">Футбол</a><a class="dropdown-item" href="dragdrop.php">Drag and drop</a></div>
+            </li>
           </ul>
         </div>
       </div>
@@ -81,8 +84,8 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="jumbotron text-center" style="margin-bottom:0">
+    <footer class="navbar-fixed-bottom">
+      <div class="jumbotron text-center">
         <div class="d-flex p-2 bd-highlight border">
           <div class="container">Подвал</div>
         </div>

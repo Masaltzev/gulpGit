@@ -23,6 +23,9 @@
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Минин</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="Minin_JS.php">JS</a><a class="dropdown-item" href="crm.php">CRM</a><a class="dropdown-item" href="#">Something else here</a></div>
             </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Доки</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="dogovor.php">Договор</a><a class="dropdown-item" href="football.php">Футбол</a><a class="dropdown-item" href="dragdrop.php">Drag and drop</a></div>
+            </li>
           </ul>
         </div>
       </div>
@@ -36,22 +39,26 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="jumbotron text-center" style="margin-bottom:0">
+    <footer class="navbar-fixed-bottom">
+      <div class="jumbotron text-center">
         <div class="d-flex p-2 bd-highlight border">
           <div class="container">Подвал</div>
         </div>
       </div>
     </footer>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-    <!--script(src="../node_modules/bootstrap/dist/js/bootstrap.js")-->
+    <!--script(src="../node_modules/bootstrap/dist/js/bootstrap.min.js")-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/oop.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/lessons.js"></script>
     <script src="js/first.js"></script>
+    <script src="js/trepachevJS.js"></script>
+    <script src="js/node.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
   </body>
 </html>

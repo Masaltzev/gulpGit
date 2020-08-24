@@ -24,7 +24,7 @@ let turnir = document.querySelector('#turnir');
 let table = document.createElement('table');
 turnir.append(table);
 table.classList.add('createTable');
-let com = ['Russia', 'Usa', 'China', 'Canada', 'Korea'];
+let com = ['Russia', 'Usa', 'China'];
 let theader = ['п.п', 'Наименование'];
 for (let r = 0; r <= com.length; r++) {
     if (r === 0) {

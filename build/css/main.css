@@ -48,6 +48,11 @@ polygon, rect {
 .createTable {
   border: solid 1px #00cc99; }
 
+footer {
+  position: fixed;
+  bottom: 1px;
+  margin-bottom: 0; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -244,6 +249,29 @@ circle {
 
 .fillTd {
   background: #f7c5a9; }
+
+#div1, #div2 {
+  height: 500px;
+  border: 1px solid #005cbf;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+
+#div1 a {
+  background: brown; }
+
+#div2 a {
+  background: darkgreen; }
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
